@@ -1,82 +1,45 @@
 '''
-From code at https://www.geeksforgeeks.org/how-to-create-a-countdown-timer-using-python/
+Nicholas Zehm
+Pytimer.py
+2-27-21
+
+Very simple timer script. Requires the vlc python module. Manually set the default sound for your system.
 '''
-# import the time module 
-import time 
-from playsound import playsound
 
-inputTime = array('B')
-
-
-def getTime():
-    badInputs = 0
-    while badInputs < 4:
-        try:
-            h = int(input("Hours: "))
-            m = int(input("Minutes: "))
-            s = int(input("Seconds: "))
-        except:
-            print("Not valid input")
-            badInputs += 1
-        else:
-            print("we ran successfully")
-               
-            
-
-'''  
+import time
+import os   #for path to music/sound
+import vlc  #this module is from the vlc team, and is required for music/sound
 
 def countdown():
+    m = int(input("minutes: "))
+    s = int(input("seconds: "))
+    a = input("User defined alarm sound? y/n: ")
     
-    gettime()
-    
-    alarm = input("Enter sound file, or leave blank for no sound: ")
-    #Check if is a legit directory
-    
-    if hrs == 0:
-        while t:
+    #### EDIT THIS: provide a valid file (vlc usable) for playfile ####
+    playfile = ""
+
+    if a == 'y':
+        path = input("Input sound file directory (no ""s): ")
+
+        isFile = os.path.isfile(path)
+        if isFile == True:
+            playfile = path
+            print("Using {0}".format(playfile))
+        else:
+            print("Error: Using default sound.")
+    t = m*60 + s
+
+    #Ctrl-C causes KeyboardInterrupt to be raised
+    try:
+        while True and t > 0:
             mins, secs = divmod(t, 60) 
-            print("{:02d}:{:02d}".format(mins, secs)
+            print("{:02d}:{:02d}".format(mins, secs), end ='\r')
             time.sleep(1)
             t -= 1
-            
-        print("Sounding the alarm...")
-        playsound(alarm)
-    else
-        print("I haven't finished this yet!")
-
-
+        p = vlc.MediaPlayer(playfile)
+        p.play()
+        input("Sounding the alarm...")        
+    except KeyboardInterrupt:
+        pass
         
-def ftimer:
-    pass
-        
-        
-while not t == 'x':
-    t = input("Type c for countdown, t for timer, x to exit")
-    
-    if t = 'c':
-        countdown()
-    elif t = 't':
-        ftimer
-    else
-        pass    
-
-# define the countdown func. 
-def countdown(t): 
-    
-    while t: 
-        mins, secs = divmod(t, 60) 
-        timer = '{:02d}:{:02d}'.format(mins, secs) 
-        print(timer, end="\r") 
-        time.sleep(1) 
-        t -= 1
-      
-    print('Fire in the hole!!') 
-  
-  
-# input time in seconds 
-t = input("Enter the time in seconds: ") 
-  
-# function call 
-countdown(int(t)) 
-'''
-getTime()
+countdown()   
