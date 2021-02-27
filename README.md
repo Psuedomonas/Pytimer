@@ -10,4 +10,4 @@ to be provided a real directory for a vlc playable file
 
 movies have not been tested ...
 
-I have not made a binary, and seeing as its a simple console script I don't think it needs one
+I have not made a binary for this file. Seeing as its a simple console script I don't think it needs one.
