@@ -11,8 +11,16 @@ import os   #for path to music/sound
 import vlc  #this module is from the vlc team, and is required for music/sound
 
 def countdown():
-    m = int(input("minutes: "))
-    s = int(input("seconds: "))
+    try:
+        m = int(input("minutes: "))
+    except:
+        print("0 minutes")
+        m=0
+    try:
+        s = int(input("seconds: "))
+    except:
+        s=0
+        print("0 seconds")
     a = input("User defined alarm sound? y/n: ")
     
     #### EDIT THIS: provide a valid file (vlc usable) for playfile ####
