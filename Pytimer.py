@@ -23,7 +23,7 @@ def countdown():
         print("0 seconds")
     a = input("User defined alarm sound? y/n: ")
     
-    #### EDIT THIS: provide a valid file (vlc usable) for playfile ####
+    #### EDIT THIS: provide a valid file (vlc usable) for playfile. This will be used as default/fallback ####
     playfile = ""
 
     if a == 'y':
