@@ -1,10 +1,10 @@
 '''
 Nicholas Zehm
 Pytimer.py
-2021-3-12
+
 
 Very simple countdown timer script. Requires the vlc python module. Manually set the default sound for your system.
-Version 1.1
+Version 1.1 (2021-3-12)
 Add hours, deal with negative values (the script worked with negative values, due to the t > 0 check) 
 '''
 
