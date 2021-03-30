@@ -26,5 +26,5 @@ Version 1.1.5 (2021-3-30)
 * Fixed typos
 
 ## Bugs
-* sometimes there is a trailing 0 in the output, caused by decimal place drop in h, mins, or secs - severity: trivial
+* When a decimal place is removed, trailing 0s can appear in output - severity: trivial
 * Alarm not implemented
