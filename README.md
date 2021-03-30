@@ -2,19 +2,29 @@
 Nicholas Zehm
 2-27-21
 
-A python script countdown timer. Console/text based interface.
+A simple python timer script. Console/text based interface.
 Requires the vlc player module.
-Also, for best use, requires the noted 
+
+Edit the following line in the code
 
 playfile = ""
 
-to be provided a real directory for a vlc playable file
+to a real directory for a vlc playable file
 
 movies have not been tested ...
+## Changes
+Version 1.1 (2021-3-12)
+* Add hours, deal with negative values (the script worked with negative values, due to the t > 0 check)
 
-Version 1.1 (2021-3-21)
+Version 1.1.2 (2021-3-27)
+* Catch bad playfile, put playfile in global scope. Script not complex enough to for this to be an issue.
 
-Changes:
-* Added hours
-* cleaned the repo
-* prevented negative inputs
+Version 1.1.5 (2021-3-30)
+* Add main menu and stopwatch method. Alarm method not properly implemented yet.
+* Add countdownSetup() to allow repeating countdown without needing additional user input
+* Fixed bug with Ctrl-C in countdown with undefined p object
+* Fixed typos
+
+## Bugs
+* When a decimal place is removed, trailing 0s can appear in output - severity: trivial
+* Alarm not implemented
