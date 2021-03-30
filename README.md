@@ -2,7 +2,7 @@
 Nicholas Zehm
 2-27-21
 
-A python script countdown timer. Console/text based interface.
+A simple python timer script. Console/text based interface.
 Requires the vlc player module.
 
 Edit the following line in the code
