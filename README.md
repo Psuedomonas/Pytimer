@@ -12,7 +12,7 @@ playfile = ""
 to a real directory for a vlc playable file
 
 movies have not been tested ...
-# Changes
+## Changes
 Version 1.1 (2021-3-12)
 * Add hours, deal with negative values (the script worked with negative values, due to the t > 0 check)
 
@@ -25,6 +25,6 @@ Version 1.1.5 (2021-3-30)
 * Fixed bug with Ctrl-C in countdown with undefined p object
 * Fixed typos
 
-# Bugs
+## Bugs
 * sometimes there is a trailing 0 in the output, caused by decimal place drop in h, mins, or secs - severity: trivial
 * Alarm not implemented
