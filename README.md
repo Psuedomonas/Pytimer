@@ -13,6 +13,11 @@ to a real directory for a vlc playable file
 
 movies have not been tested ...
 ## Changes
+Version 1.1.6 (2022-4-7)
+* Alarm clock now operational!
+* Silent countdown and displayed countdown for countdown timer and alarm clock, silent should use less system resources
+* Error checking for playfile and alarm_setup method
+
 Version 1.1.5 (2021-3-30)
 * Add main menu and stopwatch method. Alarm method not properly implemented yet.
 * Add countdownSetup() to allow repeating countdown without needing additional user input
@@ -27,4 +32,6 @@ Version 1.1 (2021-3-12)
 
 ## Bugs
 * When a decimal place is removed, trailing 0s can appear in output - severity: trivial
-* Alarm not implemented
+* Crash when a bad playfile is used. Try:Exception does not work as the issue is
+inside the c coded libvlc library. Workarounds are cumbersome, I will look into this eventually.
+
