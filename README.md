@@ -36,4 +36,4 @@ Version 1.1 (2021-3-12)
 inside the c coded libvlc library. Workarounds are cumbersome, I will look into this eventually.
 
 ### Other Notes
-clocks.py is not presently being used. It is intended for the generation of multiple clocks if and when I impliment that.
+clocks.py is not presently being used. It is intended for the generation of multiple clocks if and when that is implimented.
