@@ -13,6 +13,11 @@ to a real directory for a vlc playable file
 
 movies have not been tested ...
 ## Changes
+
+Version 1.1.7 (2022-10-9)
+* fixed some issues with alarm clock
+* file name now in lower case
+
 Version 1.1.6 (2022-4-7)
 * Alarm clock now operational!
 * Silent countdown and displayed countdown for countdown timer and alarm clock, silent should use less system resources
