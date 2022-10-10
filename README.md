@@ -2,8 +2,8 @@
 Nicholas Zehm
 2-27-21
 
-A simple python timer script. Includes a countdown timer and a stopwatch timer. Console/text based interface.
-Requires the vlc player module. 
+A simple python timer script. Includes a countdown timer, a stopwatch, and an alarm clock. Console/text based interface.
+Requires the vlc player module. User either inserts the sound file directory in the code or through the prompt in the interface.
 
 Edit the following line in the code
 
