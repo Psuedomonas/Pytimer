@@ -13,6 +13,7 @@ to a real directory for a vlc playable file
 
 movies have not been tested ...
 ## Changes
+
 Version 1.1.7 (2022-10-9)
 * fixed some issues with alarm clock
 * file name now in lower case
